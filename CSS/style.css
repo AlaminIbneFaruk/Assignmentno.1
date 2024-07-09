@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    height:780px;
+    max-width:1440;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 100px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 800;
+}
+.btn{
+    padding:17px 24px;
+    font-weight: 600;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid #0d1311;
+    border-radius: 7px;
+}
+.hero{
+    background: url(../B10A1-Challenge-Begins-main/assets/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:652px;
+    padding: 26px 221px 44px;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-title{
+    width: 998px;
+    height: 136px;
+    text-align: center;
+    font-size: 48px;
+}
+.hero-desc{
+    width: 800px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+.heroBtn{
+    background-color: #101010;
+    color:rgba(255, 255, 255, 0.915);
+    margin-top: 32px;
+}
+
