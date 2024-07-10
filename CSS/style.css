@@ -20,6 +20,10 @@ nav{
     font-size: 28px;
     font-weight: 800;
 }
+.btn a{
+    text-decoration: none;
+    color: #101010;
+}
 .heroBtn a{
     text-decoration: none;
     color: #fff;    
@@ -32,10 +36,7 @@ nav{
     border: 1px solid #0d1311;
     border-radius: 7px;
 }
-.btn a{
-    text-decoration: none;
-    color: #101010;
-}
+
 .hero{
     background: url(../B10A1-Challenge-Begins-main/assets/Hero-bg.png);
     background-repeat: no-repeat;
