@@ -198,7 +198,7 @@ iframe{
     color: #101010;
 }
 .support{
-    background-image: url(../B10A1-Challenge-Begins-main/assets/handshake.jpg);
+    background: url(../B10A1-Challenge-Begins-main/assets/handshake.jpg);
     background-size: cover;
     background-position: center;
     height: 314px;
