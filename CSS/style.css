@@ -312,9 +312,7 @@ footer{
 .socialmedia img{
   min-width:50px;
 }
-.hide{
-  display:none;
-}
+
 /* media screening part */
 @media screen and (max-width:576px) {
   *{
