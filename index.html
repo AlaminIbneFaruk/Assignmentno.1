@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment-1</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
 </head>
 <body>
     <!--  -->
-    <header>
+<div class="wrapper">
+    <header class="header hide">
         <nav>
             <div class="logo">Awlad.H</div>
             <button class="btn"><a href="#download">Download Resume</a></button>
@@ -22,8 +24,8 @@
             </div>
         </section>
     </header>
-    <main>
-        <section class="why-section">
+    <main class="main hide">
+        <section class="why-section hide">
             <div class="why-content">
                 <div class="why-header">
                     <div class="whyTitle">
@@ -54,7 +56,7 @@
                 </div>
                 
 
-                <div class="second section">
+                <div class="section second">
                     <div class="content second-c"> 
                         <div class="title second-t">
                             I will help People by creating Modern Web System
@@ -66,7 +68,7 @@
                             <a href="#" target="_blank">Learn More</a>
                         </button>
                     </div>
-                    <div class="image secondimg">
+                    <div class="image second-img">
                         <img src="B10A1-Challenge-Begins-main/assets/Group 3.png" alt="orange shirt guy">
                     </div>
                 </div>
@@ -90,17 +92,19 @@
 
             </div>
         </section>
-        <section class="inspiration">
-            <div class="insp-title">
+        <section class="inspiration hide">
+            <h2 class="insp-title">
                 My Inspiration
-            </div>
-            <div class="insp-desc">
+            </h2>
+            <p class="insp-desc">
                 Embrace the journey of constant learning and creativity. As a developer, you have the power to shape the digital world, solve real problems, and make a meaningful impact on people's lives.
-            </div>
+            </p>
             <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/S-gIFz-uYNw?si=L8hZPesSzFuDBlJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>  
+            <iframe class="iframe" src="https://www.youtube.com/embed/S-gIFz-uYNw?si=L8hZPesSzFuDBlJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>  
         </section>
-        <section class="Current-target">
+        <section class="Current-target hide">
             <div class="content-current">
                 <h1 class="title-current">
                     My Current Target
@@ -131,7 +135,45 @@
                 </div>
             </div>
         </section>
-        <section class="support" id="support">
+        <section class="next hide">
+          <h2 class="next-title">
+            My Next Target
+          </h2>
+          <p class="next-desc desc">
+            After I finished my beginner journey I am going to finish these things below
+          </p>
+          <article class="large-card one">
+            <img src="B10A1-Challenge-Begins-main/assets/react.png" alt="ReactJS">
+            <div class="large-card-text">
+              <h3>ReactJS</h3>
+              <p class="lrg-desc">
+                React is a type of javascript framework/library to make our lives easier.
+              </p>
+              <input class="btn" type="button" value="Learn More">
+            </div>
+          </article>
+          <article class="large-card two">
+            <img src="B10A1-Challenge-Begins-main/assets/nodejs.png" alt="NodeJS">
+            <div class="large-card-text">
+              <h3>NodeJS</h3>
+              <p class="lrg-desc desc">
+                Node js is a run time environment to run javascript and it has many more features too.
+              </p>
+              <input class="btn" type="button" value="Learn More">
+            </div>
+          </article>
+          <article class="large-card three">
+            <img src="B10A1-Challenge-Begins-main/assets/mongodb.png" alt="MongoDB">
+            <div class="large-card-text">
+              <h3>MongoDB</h3>
+              <p class="lrg-desc">
+                MongoDB is a DBMS system which uses NoSQL as a non-query language.
+              </p>
+              <input class="btn" type="button" value="Learn More">
+            </div>
+          </article>
+        </section>
+        <section class="support hide" id="support">
             <div class="support-title">I need Support</div>
             <div class="support-desc">Contact me with any kind of problem or any kind of help needed</div>
             <div class="support-input-sub">
@@ -139,9 +181,9 @@
                 <input type="submit" value="Submit" class="btn support-btn">
             </div>
         </section>
-    </main>
+      </main>
     <!-- footer challenge -->
-     <footer>
+     <footer class="footer ">
         <div class="statement">
         An Website made by Awlad H.
         </div>

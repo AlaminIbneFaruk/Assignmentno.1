@@ -1,22 +1,27 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+img{
+  width:100%;
+}
 body{
     font-family: "Poppins", sans-serif;
-    height:780px;
-    max-width:1440;
+    height:100vh;
 }
 nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:30px 100px;
+    padding: 1.75em 5.875em;
 }
 .logo{
+  font-family: "Azeret Mono", monospace;
     font-size: 28px;
     font-weight: 800;
 }
@@ -29,7 +34,7 @@ nav{
     color: #fff;    
 }
 .btn{
-    padding:17px 24px;
+    padding:1em 1.5em;
     font-weight: 600;
     font-size: 20px;
     box-sizing: border-box;
@@ -38,28 +43,31 @@ nav{
 }
 
 .hero{
-    background: url(../B10A1-Challenge-Begins-main/assets/Hero-bg.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:652px;
-    padding: 26px 221px 44px;
+  background: url(../B10A1-Challenge-Begins-main/assets/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* height:652px; */
+  padding: 0px 0px 0px;
 }
 .hero-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .hero-title{
-    width: 998px;
-    height: 136px;
+    font-family: "Azeret Mono", monospace;
+    max-width: 1000px;
+    /* height: 136px; */
     text-align: center;
-    font-size: 48px;
+    font-size: calc(3rem * 0.91388888888);
+    font-weight: 800;
+    padding: 0.5em;
 }
 .hero-desc{
-    width: 800px;
-    height: 50px;
-    font-size: 15px;
+    max-width: 800px;
+    /* height: 50px; */
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -68,9 +76,11 @@ nav{
     color:rgba(255, 255, 255, 0.915);
     margin-top: 32px;
 }
+/* Main part starts here */
 main{
     padding:74px 150px 79px; 
 }
+/* Why section starts here */
 .why-section{
     padding:70px 80px;
 }
@@ -89,14 +99,15 @@ main{
     font-weight: 400;
 }
 .section{
-    min-width: 730px;
-    height: 300px;
-    padding:48px;
+    max-width: 730px;
+    /* height: 300px; */
+    /* padding:48px; */
     display: flex;
     justify-content: space-between;
+    margin:0 auto;
 }
 .content{
-    width: 440px;
+    max-width: 440px;
 }
 .title{
     font-size: 24px;
@@ -104,23 +115,31 @@ main{
     padding-bottom: 15px;
 }
 .desc{
-    padding-bottom: 30px;
-    font-size: 15px;
-    font-weight: 400;
+    padding: .25rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 .image{
-    width: 370px;
-    padding-left:120px;
+    width: 35%;
+    /* padding-left:120px; */
 }
-.second{
+.first-img{
+  margin-left:7.5rem;
+}
+.third-img{
+  margin-left:7.5rem;
+}
+.second {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom:1rem;
 }
 .secondimg{
     padding-left: 0;
 }
+/* Inspiration section starts here */
 .inspiration{
     display: flex;
     flex-direction: column;
@@ -128,24 +147,20 @@ main{
     align-items: center;
 }
 .insp-title{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
-    padding-bottom:24px;
+    padding-bottom:1.5rem;
 }
 .insp-desc{
     text-align: center;
-    padding: 30px 48px 30px;
-}
-
-iframe{
-    padding:32px 0;
-    height:614px;
-    width:1000px;
-
+    padding: 1.875rem 3rem;
 }
 .iframe{
     border-radius:10px;
+    /* width:200%; */
+    width:560px; height:315px;
 }
+/* Current target section strats here */
 .content-current{
     display:flex;
     flex-direction: column;
@@ -163,56 +178,103 @@ iframe{
 }
 .card-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .card{
-    padding: 40px;
-    width: 360px;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 2rem;
+    max-width: 320px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: 3rem;
     border-radius: 16px;
-    margin-top: 48px;
 }
 /* sir aita module e chilo tai add kore diyechi */
 .card:hover{
     box-shadow: 2px 2px 5px rgba(0, 201, 232,0.5);
     cursor:pointer;
 }
+.card img{
+  width:30%;
+}
+.card a{
+  text-decoration: wavy;
+}
+
 .card1{
     background-color: rgba(255, 75, 30, 0.05);
 }
+
 .card1:hover{
-    box-shadow: 2px 2px 5px rgba(255, 75, 30,0.5);
+    box-shadow: 2px 2px 5px rgba(255, 75, 30,0.7);
+  }
+.card1 img{
+  width:30%;
 }
 .card2{
     background-color: rgba(0, 76, 232, 0.05);
 }
 .card2:hover{
-    box-shadow: 2px 2px 5px rgba(0, 76, 232,0.5);
+    box-shadow: 2px 2px 5px rgba(0, 76, 232,0.7);
+}
+.card2 img{
+  width:30%;
 }
 .card3{
-    background-color: rgba(255, 223, 0, 0.05);
+    background-color: rgba(255, 223, 0, 0.1);
 }
 .card3:hover{
-    box-shadow: 2px 2px 5px rgba(255, 223, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(255, 230, 0, 0.7);
+}
+.card3 img{
+  width:30%;
 }
 .card > .card-title{
     margin: 25px 0px 15px;
     font-size:24px;
 }
 .card > .card-desc{
-    margin: 25px 0px 15px;
+    margin: 1em 0px 1em;
     font-size:16px;
     font-weight:400;
 }
 .card  a{
     color: #101010;
 }
+
+/* Next section */
+.next-title,
+.next-desc{
+  padding: 1rem;
+  text-align: center;
+}
+.large-card{
+  display:flex;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border:1px solid rgba(16, 16, 16,0.5);
+  margin:1rem;
+  border-radius: 8px;
+}
+.large-card img{
+  width:18%;
+}
+.large-card-text *{
+  margin: .8rem;
+}
+.large-card-text .btn{
+  border:none;
+  padding: 0;
+  font-size: 1rem;
+}
+/* support section */
 .support{
     margin: 41px;
     background-image: url(../B10A1-Challenge-Begins-main/assets/handshake.jpg);
     background-size: cover;
     background-position: center;
-    height: 314px;
+    /* height: 314px; */
     color:whitesmoke;
     padding: 64px 48px;
     display: flex;
@@ -230,10 +292,11 @@ iframe{
     font-weight: 400;
 }
 .input-s{
-    height:57px;
-    width:548px;
-    padding: 20px 20px;
+    /* height:57px; */
+    width:32rem;
+    padding: 1rem 1rem;
 }
+/* footers section */
 footer{
     padding:0px 150px 40px;
     display: flex;
@@ -245,4 +308,54 @@ footer{
 .socialmedia{
     display: flex;
     gap:24px;
+}
+.socialmedia img{
+  min-width:50px;
+}
+.hide{
+  display:none;
+}
+/* media screening part */
+@media screen and (max-width:576px) {
+  *{
+    padding:0;
+    margin:0 auto;
+  }
+  /* main part */
+  main {
+     padding: 0; 
+  }
+  /* Why section */
+  .why-section {
+    padding: 70px .25em;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+     width: 100%;
+}
+.first-img{
+  margin-left:0;
+  justify-self: center;
+}
+.second {
+  margin-bottom: 1rem;
+}
+/* Card section */
+.card-container{
+  flex-direction: column;
+}
+.large-card{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.large-card img{
+  width:50%;
+  }
+  footer{
+    padding:0; 
+}
 }
